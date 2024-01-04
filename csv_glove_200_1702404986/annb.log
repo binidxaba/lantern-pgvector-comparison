@@ -1,0 +1,927 @@
+2023-12-12 04:53:52,736 - annb - INFO - running only pgvector
+2023-12-12 04:53:52,780 - annb - INFO - Order: [Definition(algorithm='pgvector', constructor='PGVector', module='ann_benchmarks.algorithms.pgvector', docker_tag='ann-benchmarks-pgvector', arguments=['angular', {'M': 24, 'efConstruction': 200}], query_argument_groups=[[10], [20], [40], [80], [120], [200], [400], [800]], disabled=False), Definition(algorithm='pgvector', constructor='PGVector', module='ann_benchmarks.algorithms.pgvector', docker_tag='ann-benchmarks-pgvector', arguments=['angular', {'M': 16, 'efConstruction': 200}], query_argument_groups=[[10], [20], [40], [80], [120], [200], [400], [800]], disabled=False)]
+2023-12-12 04:53:53,254 - annb.4377c6ba7dde - INFO - Created container 4377c6ba7dde: CPU limit 1, mem limit 32409168640, timeout 18000, command ['--dataset', 'glove-200-angular', '--algorithm', 'pgvector', '--module', 'ann_benchmarks.algorithms.pgvector', '--constructor', 'PGVector', '--runs', '5', '--count', '10', '["angular", {"M": 24, "efConstruction": 200}]', '[10]', '[20]', '[40]', '[80]', '[120]', '[200]', '[400]', '[800]']
+2023-12-12 04:53:53,723 - annb.4377c6ba7dde - INFO - [34m['angular', {'M': 24, 'efConstruction': 200}][0m
+2023-12-12 04:53:53,724 - annb.4377c6ba7dde - INFO - [34mTrying to instantiate ann_benchmarks.algorithms.pgvector.PGVector(['angular', {'M': 24, 'efConstruction': 200}])[0m
+2023-12-12 04:53:56,646 - annb.4377c6ba7dde - INFO - [34mGot a train set of size (1183514 * 200)[0m
+2023-12-12 04:53:56,646 - annb.4377c6ba7dde - INFO - [34mGot 10000 queries[0m
+2023-12-12 04:53:58,385 - annb.4377c6ba7dde - INFO - [34m * Starting PostgreSQL 14 database server[0m
+2023-12-12 04:54:05,869 - annb.4377c6ba7dde - INFO - [34m   ...done.[0m
+2023-12-12 04:54:05,918 - annb.4377c6ba7dde - INFO - [34mcopying data...[0m
+2023-12-12 04:59:52,204 - annb.4377c6ba7dde - INFO - [34mcreating index...[0m
+2023-12-12 07:40:17,588 - annb.4377c6ba7dde - INFO - [34mdone![0m
+2023-12-12 07:40:17,594 - annb.4377c6ba7dde - INFO - [34mBuilt index in 9979.269327402115[0m
+2023-12-12 07:40:17,594 - annb.4377c6ba7dde - INFO - [34mIndex size:  1578032.0[0m
+2023-12-12 07:40:17,594 - annb.4377c6ba7dde - INFO - [34mRunning query argument group 1 of 8...[0m
+2023-12-12 07:40:17,595 - annb.4377c6ba7dde - INFO - [34mRun 1/5...[0m
+2023-12-12 07:40:21,205 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:40:24,768 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:40:28,170 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:40:31,434 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:40:34,588 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:40:37,670 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:40:40,905 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:40:43,981 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:40:46,792 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:40:49,518 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:40:49,525 - annb.4377c6ba7dde - INFO - [34mRun 2/5...[0m
+2023-12-12 07:40:52,041 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:40:54,495 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:40:56,972 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:40:59,459 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:41:01,971 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:41:04,420 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:41:07,000 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:41:09,522 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:41:11,991 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:41:14,719 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:41:14,728 - annb.4377c6ba7dde - INFO - [34mRun 3/5...[0m
+2023-12-12 07:41:16,961 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:41:19,221 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:41:21,499 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:41:23,809 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:41:25,965 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:41:28,144 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:41:30,393 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:41:32,855 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:41:35,137 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:41:37,348 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:41:37,364 - annb.4377c6ba7dde - INFO - [34mRun 4/5...[0m
+2023-12-12 07:41:39,605 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:41:41,854 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:41:44,071 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:41:46,410 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:41:48,608 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:41:50,856 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:41:53,058 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:41:55,337 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:41:57,639 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:41:59,837 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:41:59,854 - annb.4377c6ba7dde - INFO - [34mRun 5/5...[0m
+2023-12-12 07:42:02,034 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:42:04,215 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:42:06,413 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:42:08,618 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:42:10,783 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:42:12,991 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:42:15,173 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:42:17,407 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:42:19,619 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:42:21,846 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:42:24,187 - annb.4377c6ba7dde - INFO - [34mRunning query argument group 2 of 8...[0m
+2023-12-12 07:42:24,188 - annb.4377c6ba7dde - INFO - [34mRun 1/5...[0m
+2023-12-12 07:42:27,492 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:42:30,895 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:42:34,177 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:42:37,559 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:42:41,063 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:42:44,550 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:42:47,970 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:42:51,476 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:42:54,907 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:42:58,309 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:42:58,315 - annb.4377c6ba7dde - INFO - [34mRun 2/5...[0m
+2023-12-12 07:43:01,666 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:43:05,015 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:43:08,284 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:43:11,615 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:43:14,913 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:43:18,282 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:43:21,554 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:43:24,906 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:43:28,145 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:43:31,503 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:43:31,520 - annb.4377c6ba7dde - INFO - [34mRun 3/5...[0m
+2023-12-12 07:43:34,808 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:43:38,126 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:43:41,486 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:43:44,802 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:43:48,043 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:43:51,222 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:43:54,467 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:43:57,752 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:44:00,920 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:44:04,192 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:44:04,208 - annb.4377c6ba7dde - INFO - [34mRun 4/5...[0m
+2023-12-12 07:44:07,489 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:44:10,694 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:44:13,930 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:44:17,224 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:44:20,508 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:44:23,876 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:44:27,143 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:44:30,452 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:44:33,642 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:44:36,996 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:44:37,013 - annb.4377c6ba7dde - INFO - [34mRun 5/5...[0m
+2023-12-12 07:44:40,427 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:44:43,724 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:44:46,911 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:44:50,113 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:44:53,273 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:44:56,461 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:44:59,599 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:45:02,879 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:45:06,131 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:45:09,523 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:45:11,878 - annb.4377c6ba7dde - INFO - [34mRunning query argument group 3 of 8...[0m
+2023-12-12 07:45:11,879 - annb.4377c6ba7dde - INFO - [34mRun 1/5...[0m
+2023-12-12 07:45:16,954 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:45:21,950 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:45:26,949 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:45:31,975 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:45:37,119 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:45:42,208 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:45:47,171 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:45:52,222 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:45:57,204 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:46:02,209 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:46:02,215 - annb.4377c6ba7dde - INFO - [34mRun 2/5...[0m
+2023-12-12 07:46:07,233 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:46:12,148 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:46:17,094 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:46:22,180 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:46:27,227 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:46:32,181 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:46:37,185 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:46:42,349 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:46:47,431 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:46:52,438 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:46:52,453 - annb.4377c6ba7dde - INFO - [34mRun 3/5...[0m
+2023-12-12 07:46:57,480 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:47:02,486 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:47:07,571 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:47:12,637 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:47:17,695 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:47:22,681 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:47:27,617 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:47:32,767 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:47:37,806 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:47:42,788 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:47:42,804 - annb.4377c6ba7dde - INFO - [34mRun 4/5...[0m
+2023-12-12 07:47:47,788 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:47:52,664 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:47:57,606 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:48:02,571 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:48:07,621 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:48:12,524 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:48:17,471 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:48:22,542 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:48:27,563 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:48:32,627 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:48:32,641 - annb.4377c6ba7dde - INFO - [34mRun 5/5...[0m
+2023-12-12 07:48:37,620 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:48:42,692 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:48:47,648 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:48:52,609 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:48:57,609 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:49:03,132 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:49:08,168 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:49:13,282 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:49:18,259 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:49:23,292 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:49:25,604 - annb.4377c6ba7dde - INFO - [34mRunning query argument group 4 of 8...[0m
+2023-12-12 07:49:25,604 - annb.4377c6ba7dde - INFO - [34mRun 1/5...[0m
+2023-12-12 07:49:33,671 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:49:41,888 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:49:49,980 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:49:58,086 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:50:06,184 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:50:14,307 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:50:22,486 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:50:30,737 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:50:38,860 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:50:47,032 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:50:47,038 - annb.4377c6ba7dde - INFO - [34mRun 2/5...[0m
+2023-12-12 07:50:55,033 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:51:03,127 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:51:11,267 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:51:19,386 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:51:27,402 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:51:35,517 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:51:43,607 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:51:51,731 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:51:59,704 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:52:07,857 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:52:07,873 - annb.4377c6ba7dde - INFO - [34mRun 3/5...[0m
+2023-12-12 07:52:15,942 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:52:24,037 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:52:32,149 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:52:40,296 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:52:48,346 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:52:56,397 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:53:05,056 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:53:13,265 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:53:21,473 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:53:29,524 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:53:29,540 - annb.4377c6ba7dde - INFO - [34mRun 4/5...[0m
+2023-12-12 07:53:37,624 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:53:45,727 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:53:53,785 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:54:01,852 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:54:09,820 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:54:17,871 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:54:25,950 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:54:34,189 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:54:42,383 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:54:50,430 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:54:50,445 - annb.4377c6ba7dde - INFO - [34mRun 5/5...[0m
+2023-12-12 07:54:58,454 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:55:06,579 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:55:14,832 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:55:23,010 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:55:31,035 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:55:39,130 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:55:47,187 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:55:55,303 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:56:03,263 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:56:11,313 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:56:13,648 - annb.4377c6ba7dde - INFO - [34mRunning query argument group 5 of 8...[0m
+2023-12-12 07:56:13,649 - annb.4377c6ba7dde - INFO - [34mRun 1/5...[0m
+2023-12-12 07:56:24,526 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:56:35,543 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:56:46,495 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:56:57,425 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:57:08,342 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:57:19,519 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:57:30,466 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:57:41,575 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:57:52,490 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:58:03,346 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:58:03,352 - annb.4377c6ba7dde - INFO - [34mRun 2/5...[0m
+2023-12-12 07:58:14,245 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 07:58:25,143 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 07:58:36,143 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 07:58:47,116 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 07:58:57,859 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 07:59:08,792 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 07:59:20,074 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 07:59:31,351 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 07:59:42,486 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 07:59:53,357 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 07:59:53,372 - annb.4377c6ba7dde - INFO - [34mRun 3/5...[0m
+2023-12-12 08:00:04,296 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:00:15,253 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:00:26,326 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:00:37,443 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:00:48,260 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:00:59,124 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:01:10,141 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:01:22,014 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:01:32,888 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:01:43,773 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:01:43,790 - annb.4377c6ba7dde - INFO - [34mRun 4/5...[0m
+2023-12-12 08:01:54,656 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:02:05,529 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:02:16,418 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:02:27,378 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:02:38,327 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:02:49,258 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:03:00,122 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:03:11,231 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:03:22,129 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:03:32,951 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:03:32,967 - annb.4377c6ba7dde - INFO - [34mRun 5/5...[0m
+2023-12-12 08:03:43,867 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:03:54,769 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:04:05,850 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:04:16,754 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:04:27,442 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:04:38,465 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:04:49,446 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:05:00,486 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:05:11,484 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:05:22,377 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:05:24,726 - annb.4377c6ba7dde - INFO - [34mRunning query argument group 6 of 8...[0m
+2023-12-12 08:05:24,726 - annb.4377c6ba7dde - INFO - [34mRun 1/5...[0m
+2023-12-12 08:05:41,324 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:05:57,714 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:06:14,142 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:06:30,590 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:06:46,909 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:07:03,301 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:07:19,634 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:07:36,264 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:07:52,516 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:08:08,624 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:08:08,631 - annb.4377c6ba7dde - INFO - [34mRun 2/5...[0m
+2023-12-12 08:08:24,748 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:08:41,189 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:08:57,427 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:09:13,830 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:09:30,093 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:09:46,308 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:10:02,494 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:10:18,996 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:10:35,059 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:10:51,237 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:10:51,252 - annb.4377c6ba7dde - INFO - [34mRun 3/5...[0m
+2023-12-12 08:11:07,463 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:11:23,967 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:11:40,339 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:11:56,556 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:12:12,564 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:12:28,781 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:12:45,096 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:13:01,498 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:13:17,750 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:13:33,790 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:13:33,805 - annb.4377c6ba7dde - INFO - [34mRun 4/5...[0m
+2023-12-12 08:13:49,827 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:14:06,130 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:14:22,312 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:14:38,512 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:14:54,387 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:15:10,591 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:15:26,807 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:15:43,181 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:15:59,244 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:16:15,277 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:16:15,292 - annb.4377c6ba7dde - INFO - [34mRun 5/5...[0m
+2023-12-12 08:16:31,445 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:16:47,680 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:17:03,838 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:17:20,152 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:17:36,227 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:17:52,373 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:18:08,515 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:18:25,026 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:18:41,135 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:18:57,143 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:18:59,504 - annb.4377c6ba7dde - INFO - [34mRunning query argument group 7 of 8...[0m
+2023-12-12 08:18:59,505 - annb.4377c6ba7dde - INFO - [34mRun 1/5...[0m
+2023-12-12 08:19:28,813 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:19:58,257 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:20:27,548 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:20:56,859 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:21:25,742 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:21:55,015 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:22:24,071 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:22:53,677 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:23:22,707 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:23:51,608 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:23:51,614 - annb.4377c6ba7dde - INFO - [34mRun 2/5...[0m
+2023-12-12 08:24:20,618 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:24:50,185 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:25:19,497 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:25:48,758 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:26:17,434 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:26:46,509 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:27:15,542 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:27:45,125 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:28:14,138 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:28:43,465 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:28:43,480 - annb.4377c6ba7dde - INFO - [34mRun 3/5...[0m
+2023-12-12 08:29:12,548 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:29:42,061 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:30:11,302 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:30:40,752 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:31:09,552 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:31:38,808 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:32:07,818 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:32:37,382 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:33:06,580 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:33:36,459 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:33:36,476 - annb.4377c6ba7dde - INFO - [34mRun 4/5...[0m
+2023-12-12 08:34:05,820 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:34:35,474 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:35:04,951 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:35:34,645 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:36:03,256 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:36:32,671 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:37:01,769 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:37:31,492 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:38:00,455 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:38:29,447 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:38:29,464 - annb.4377c6ba7dde - INFO - [34mRun 5/5...[0m
+2023-12-12 08:38:58,679 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:39:28,392 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:39:57,655 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:40:26,882 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:40:55,758 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:41:24,952 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:41:54,176 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:42:23,973 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:42:53,240 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:43:22,410 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:43:24,736 - annb.4377c6ba7dde - INFO - [34mRunning query argument group 8 of 8...[0m
+2023-12-12 08:43:24,737 - annb.4377c6ba7dde - INFO - [34mRun 1/5...[0m
+2023-12-12 08:44:19,850 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:45:15,992 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:46:11,683 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:47:07,288 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:48:01,732 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:48:57,208 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:49:53,065 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 08:50:49,339 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 08:51:44,225 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 08:52:38,865 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 08:52:38,872 - annb.4377c6ba7dde - INFO - [34mRun 2/5...[0m
+2023-12-12 08:53:33,998 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 08:54:29,841 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 08:55:25,808 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 08:56:20,965 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 08:57:15,194 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 08:58:09,926 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 08:59:04,402 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 09:00:00,537 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 09:00:55,403 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 09:01:49,968 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 09:01:49,984 - annb.4377c6ba7dde - INFO - [34mRun 3/5...[0m
+2023-12-12 09:02:44,943 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 09:03:41,650 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 09:04:37,911 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 09:05:33,633 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 09:06:28,913 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 09:07:24,269 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 09:08:19,373 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 09:09:15,475 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 09:10:10,365 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 09:11:05,186 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 09:11:05,203 - annb.4377c6ba7dde - INFO - [34mRun 4/5...[0m
+2023-12-12 09:12:00,324 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 09:12:56,588 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 09:13:52,106 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 09:14:47,468 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 09:15:42,056 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 09:16:37,327 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 09:17:32,677 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 09:18:30,146 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 09:19:25,212 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 09:20:19,662 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 09:20:19,678 - annb.4377c6ba7dde - INFO - [34mRun 5/5...[0m
+2023-12-12 09:21:14,970 - annb.4377c6ba7dde - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 09:22:10,944 - annb.4377c6ba7dde - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 09:23:06,757 - annb.4377c6ba7dde - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 09:24:02,186 - annb.4377c6ba7dde - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 09:24:57,194 - annb.4377c6ba7dde - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 09:25:52,819 - annb.4377c6ba7dde - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 09:26:48,494 - annb.4377c6ba7dde - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 09:27:45,317 - annb.4377c6ba7dde - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 09:28:40,800 - annb.4377c6ba7dde - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 09:29:35,461 - annb.4377c6ba7dde - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 09:29:39,019 - annb.4377c6ba7dde - INFO - Child process for container 4377c6ba7dde returned exit code 0 with message 
+2023-12-12 09:29:39,019 - annb.4377c6ba7dde - INFO - Removing container
+2023-12-12 09:29:40,369 - annb.d909ff8743bc - INFO - Created container d909ff8743bc: CPU limit 1, mem limit 32395660032, timeout 18000, command ['--dataset', 'glove-200-angular', '--algorithm', 'pgvector', '--module', 'ann_benchmarks.algorithms.pgvector', '--constructor', 'PGVector', '--runs', '5', '--count', '10', '["angular", {"M": 16, "efConstruction": 200}]', '[10]', '[20]', '[40]', '[80]', '[120]', '[200]', '[400]', '[800]']
+2023-12-12 09:29:40,837 - annb.d909ff8743bc - INFO - [34m['angular', {'M': 16, 'efConstruction': 200}][0m
+2023-12-12 09:29:40,837 - annb.d909ff8743bc - INFO - [34mTrying to instantiate ann_benchmarks.algorithms.pgvector.PGVector(['angular', {'M': 16, 'efConstruction': 200}])[0m
+2023-12-12 09:29:43,210 - annb.d909ff8743bc - INFO - [34mGot a train set of size (1183514 * 200)[0m
+2023-12-12 09:29:43,211 - annb.d909ff8743bc - INFO - [34mGot 10000 queries[0m
+2023-12-12 09:29:44,917 - annb.d909ff8743bc - INFO - [34m * Starting PostgreSQL 14 database server[0m
+2023-12-12 09:29:52,380 - annb.d909ff8743bc - INFO - [34m   ...done.[0m
+2023-12-12 09:29:52,424 - annb.d909ff8743bc - INFO - [34mcopying data...[0m
+2023-12-12 09:35:39,254 - annb.d909ff8743bc - INFO - [34mcreating index...[0m
+2023-12-12 11:13:02,446 - annb.d909ff8743bc - INFO - [34mdone![0m
+2023-12-12 11:13:02,448 - annb.d909ff8743bc - INFO - [34mBuilt index in 6197.599109888077[0m
+2023-12-12 11:13:02,448 - annb.d909ff8743bc - INFO - [34mIndex size:  1352608.0[0m
+2023-12-12 11:13:02,448 - annb.d909ff8743bc - INFO - [34mRunning query argument group 1 of 8...[0m
+2023-12-12 11:13:02,449 - annb.d909ff8743bc - INFO - [34mRun 1/5...[0m
+2023-12-12 11:13:04,436 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:13:06,434 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:13:08,406 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:13:10,315 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:13:12,249 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:13:14,129 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:13:15,982 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:13:17,941 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:13:19,772 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:13:21,553 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:13:21,560 - annb.d909ff8743bc - INFO - [34mRun 2/5...[0m
+2023-12-12 11:13:23,279 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:13:25,141 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:13:26,981 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:13:28,826 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:13:30,663 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:13:32,520 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:13:34,440 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:13:36,353 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:13:38,171 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:13:39,990 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:13:40,006 - annb.d909ff8743bc - INFO - [34mRun 3/5...[0m
+2023-12-12 11:13:41,827 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:13:43,635 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:13:45,480 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:13:47,281 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:13:49,069 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:13:50,874 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:13:52,699 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:13:54,630 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:13:56,418 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:13:58,432 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:13:58,447 - annb.d909ff8743bc - INFO - [34mRun 4/5...[0m
+2023-12-12 11:14:00,134 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:14:01,812 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:14:03,519 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:14:05,210 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:14:06,939 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:14:08,627 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:14:10,300 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:14:11,983 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:14:13,712 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:14:15,368 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:14:15,384 - annb.d909ff8743bc - INFO - [34mRun 5/5...[0m
+2023-12-12 11:14:17,061 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:14:18,750 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:14:20,430 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:14:22,092 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:14:23,776 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:14:25,455 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:14:27,136 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:14:28,818 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:14:30,479 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:14:32,137 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:14:34,394 - annb.d909ff8743bc - INFO - [34mRunning query argument group 2 of 8...[0m
+2023-12-12 11:14:34,395 - annb.d909ff8743bc - INFO - [34mRun 1/5...[0m
+2023-12-12 11:14:36,809 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:14:39,332 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:14:41,745 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:14:44,108 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:14:46,509 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:14:48,873 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:14:51,273 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:14:53,715 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:14:56,122 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:14:58,504 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:14:58,510 - annb.d909ff8743bc - INFO - [34mRun 2/5...[0m
+2023-12-12 11:15:00,935 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:15:03,392 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:15:05,857 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:15:08,302 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:15:10,688 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:15:13,090 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:15:15,507 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:15:17,954 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:15:20,318 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:15:22,737 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:15:22,753 - annb.d909ff8743bc - INFO - [34mRun 3/5...[0m
+2023-12-12 11:15:25,134 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:15:27,522 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:15:29,962 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:15:32,361 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:15:34,751 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:15:37,146 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:15:39,528 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:15:41,952 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:15:44,302 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:15:46,649 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:15:46,664 - annb.d909ff8743bc - INFO - [34mRun 4/5...[0m
+2023-12-12 11:15:48,992 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:15:51,341 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:15:53,684 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:15:56,026 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:15:58,350 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:16:00,769 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:16:03,128 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:16:05,547 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:16:07,929 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:16:10,245 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:16:10,260 - annb.d909ff8743bc - INFO - [34mRun 5/5...[0m
+2023-12-12 11:16:12,582 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:16:14,904 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:16:17,215 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:16:19,518 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:16:21,893 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:16:24,233 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:16:26,597 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:16:28,997 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:16:31,374 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:16:33,761 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:16:36,066 - annb.d909ff8743bc - INFO - [34mRunning query argument group 3 of 8...[0m
+2023-12-12 11:16:36,066 - annb.d909ff8743bc - INFO - [34mRun 1/5...[0m
+2023-12-12 11:16:39,695 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:16:43,390 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:16:47,056 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:16:50,643 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:16:54,325 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:16:57,949 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:17:01,595 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:17:05,280 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:17:08,937 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:17:12,557 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:17:12,563 - annb.d909ff8743bc - INFO - [34mRun 2/5...[0m
+2023-12-12 11:17:16,164 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:17:19,853 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:17:23,526 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:17:27,156 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:17:30,799 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:17:34,373 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:17:38,086 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:17:41,713 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:17:45,281 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:17:48,810 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:17:48,824 - annb.d909ff8743bc - INFO - [34mRun 3/5...[0m
+2023-12-12 11:17:52,356 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:17:56,114 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:17:59,768 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:18:03,412 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:18:07,142 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:18:10,760 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:18:14,440 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:18:18,182 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:18:21,901 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:18:25,625 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:18:25,641 - annb.d909ff8743bc - INFO - [34mRun 4/5...[0m
+2023-12-12 11:18:29,334 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:18:33,084 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:18:36,772 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:18:40,499 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:18:44,217 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:18:47,919 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:18:51,601 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:18:55,310 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:18:59,002 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:19:02,704 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:19:02,719 - annb.d909ff8743bc - INFO - [34mRun 5/5...[0m
+2023-12-12 11:19:06,421 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:19:10,313 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:19:14,086 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:19:17,724 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:19:21,337 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:19:24,964 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:19:28,589 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:19:32,276 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:19:35,976 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:19:39,709 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:19:42,032 - annb.d909ff8743bc - INFO - [34mRunning query argument group 4 of 8...[0m
+2023-12-12 11:19:42,032 - annb.d909ff8743bc - INFO - [34mRun 1/5...[0m
+2023-12-12 11:19:47,943 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:19:53,947 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:19:59,970 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:20:06,107 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:20:12,114 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:20:18,076 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:20:24,167 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:20:30,199 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:20:36,241 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:20:42,283 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:20:42,289 - annb.d909ff8743bc - INFO - [34mRun 2/5...[0m
+2023-12-12 11:20:48,181 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:20:54,278 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:21:00,397 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:21:06,502 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:21:12,596 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:21:18,685 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:21:24,793 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:21:30,823 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:21:36,785 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:21:42,795 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:21:42,809 - annb.d909ff8743bc - INFO - [34mRun 3/5...[0m
+2023-12-12 11:21:48,712 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:21:54,700 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:22:00,647 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:22:06,681 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:22:12,646 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:22:18,580 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:22:24,601 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:22:30,577 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:22:36,580 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:22:42,608 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:22:42,623 - annb.d909ff8743bc - INFO - [34mRun 4/5...[0m
+2023-12-12 11:22:48,533 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:22:54,576 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:23:00,558 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:23:06,593 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:23:13,650 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:23:19,627 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:23:25,573 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:23:31,563 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:23:37,489 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:23:43,386 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:23:43,401 - annb.d909ff8743bc - INFO - [34mRun 5/5...[0m
+2023-12-12 11:23:49,200 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:23:55,082 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:24:01,023 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:24:06,973 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:24:12,817 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:24:18,747 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:24:24,701 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:24:30,642 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:24:36,486 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:24:42,402 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:24:44,703 - annb.d909ff8743bc - INFO - [34mRunning query argument group 5 of 8...[0m
+2023-12-12 11:24:44,703 - annb.d909ff8743bc - INFO - [34mRun 1/5...[0m
+2023-12-12 11:24:52,536 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:25:00,457 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:25:08,433 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:25:16,396 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:25:24,247 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:25:32,228 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:25:40,244 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:25:48,230 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:25:56,083 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:26:04,029 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:26:04,035 - annb.d909ff8743bc - INFO - [34mRun 2/5...[0m
+2023-12-12 11:26:11,972 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:26:19,878 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:26:27,792 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:26:35,771 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:26:43,572 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:26:51,407 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:26:59,404 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:27:07,398 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:27:15,298 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:27:23,838 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:27:23,854 - annb.d909ff8743bc - INFO - [34mRun 3/5...[0m
+2023-12-12 11:27:32,247 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:27:40,793 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:27:48,758 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:27:56,667 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:28:04,648 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:28:12,579 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:28:20,513 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:28:28,426 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:28:36,256 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:28:44,099 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:28:44,118 - annb.d909ff8743bc - INFO - [34mRun 4/5...[0m
+2023-12-12 11:28:51,980 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:28:59,890 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:29:07,825 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:29:15,781 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:29:23,700 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:29:31,515 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:29:39,475 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:29:47,364 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:29:55,148 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:30:02,999 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:30:03,017 - annb.d909ff8743bc - INFO - [34mRun 5/5...[0m
+2023-12-12 11:30:10,907 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:30:18,875 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:30:26,912 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:30:34,856 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:30:42,767 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:30:50,635 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:30:58,545 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:31:06,516 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:31:14,428 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:31:22,372 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:31:24,688 - annb.d909ff8743bc - INFO - [34mRunning query argument group 6 of 8...[0m
+2023-12-12 11:31:24,688 - annb.d909ff8743bc - INFO - [34mRun 1/5...[0m
+2023-12-12 11:31:36,344 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:31:48,113 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:31:59,781 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:32:11,539 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:32:23,087 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:32:34,619 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:32:46,435 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:32:58,119 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:33:09,680 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:33:21,306 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:33:21,313 - annb.d909ff8743bc - INFO - [34mRun 2/5...[0m
+2023-12-12 11:33:32,873 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:33:44,560 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:33:56,086 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:34:07,682 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:34:19,138 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:34:30,685 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:34:42,427 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:34:54,067 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:35:05,622 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:35:17,233 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:35:17,247 - annb.d909ff8743bc - INFO - [34mRun 3/5...[0m
+2023-12-12 11:35:28,841 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:35:40,625 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:35:52,167 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:36:03,796 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:36:15,318 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:36:26,926 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:36:38,710 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:36:50,416 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:37:01,922 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:37:13,711 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:37:13,727 - annb.d909ff8743bc - INFO - [34mRun 4/5...[0m
+2023-12-12 11:37:25,415 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:37:37,279 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:37:48,927 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:38:00,551 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:38:12,135 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:38:23,633 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:38:35,368 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:38:47,096 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:38:58,585 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:39:10,198 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:39:10,213 - annb.d909ff8743bc - INFO - [34mRun 5/5...[0m
+2023-12-12 11:39:22,105 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:39:34,056 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:39:45,879 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:39:57,660 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:40:09,352 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:40:20,829 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:40:32,491 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:40:44,296 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:40:56,085 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:41:07,753 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:41:10,054 - annb.d909ff8743bc - INFO - [34mRunning query argument group 7 of 8...[0m
+2023-12-12 11:41:10,054 - annb.d909ff8743bc - INFO - [34mRun 1/5...[0m
+2023-12-12 11:41:30,359 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:41:50,990 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:42:11,329 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:42:31,967 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:42:52,311 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:43:12,820 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:43:33,288 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:43:54,001 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:44:14,173 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:44:34,470 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:44:34,477 - annb.d909ff8743bc - INFO - [34mRun 2/5...[0m
+2023-12-12 11:44:54,942 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:45:15,742 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:45:36,231 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:45:56,631 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:46:16,869 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:46:37,314 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:46:57,892 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:47:18,630 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:47:38,759 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:47:59,027 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:47:59,042 - annb.d909ff8743bc - INFO - [34mRun 3/5...[0m
+2023-12-12 11:48:19,405 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:48:40,217 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:49:00,517 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:49:20,950 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:49:41,138 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:50:01,427 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:50:21,744 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:50:42,397 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:51:02,694 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:51:23,187 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:51:23,203 - annb.d909ff8743bc - INFO - [34mRun 4/5...[0m
+2023-12-12 11:51:43,590 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:52:04,100 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:52:24,570 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:52:45,149 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:53:05,385 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:53:25,845 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:53:46,124 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:54:06,637 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:54:26,771 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:54:47,033 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:54:47,048 - annb.d909ff8743bc - INFO - [34mRun 5/5...[0m
+2023-12-12 11:55:07,311 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:55:27,838 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 11:55:48,813 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 11:56:10,908 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 11:56:31,531 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 11:56:53,106 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 11:57:13,765 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 11:57:34,425 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 11:57:54,298 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 11:58:14,288 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 11:58:16,569 - annb.d909ff8743bc - INFO - [34mRunning query argument group 8 of 8...[0m
+2023-12-12 11:58:16,570 - annb.d909ff8743bc - INFO - [34mRun 1/5...[0m
+2023-12-12 11:58:53,924 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 11:59:32,168 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 12:00:11,194 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 12:00:49,147 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 12:01:26,351 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 12:02:03,573 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 12:02:41,006 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 12:03:19,049 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 12:03:56,177 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 12:04:33,368 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 12:04:33,379 - annb.d909ff8743bc - INFO - [34mRun 2/5...[0m
+2023-12-12 12:05:11,032 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 12:05:48,857 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 12:06:26,293 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 12:07:03,868 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 12:07:40,984 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 12:08:18,040 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 12:08:55,219 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 12:09:33,129 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 12:10:10,102 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 12:10:47,149 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 12:10:47,164 - annb.d909ff8743bc - INFO - [34mRun 3/5...[0m
+2023-12-12 12:11:24,454 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 12:12:02,142 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 12:12:39,674 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 12:13:17,377 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 12:13:54,143 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 12:14:31,462 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 12:15:09,018 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 12:15:47,165 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 12:16:24,127 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 12:17:01,250 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 12:17:01,267 - annb.d909ff8743bc - INFO - [34mRun 4/5...[0m
+2023-12-12 12:17:38,925 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 12:18:17,058 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 12:18:54,803 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 12:19:32,544 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 12:20:11,340 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 12:20:48,938 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 12:21:26,673 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 12:22:05,013 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 12:22:42,292 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 12:23:19,412 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 12:23:19,428 - annb.d909ff8743bc - INFO - [34mRun 5/5...[0m
+2023-12-12 12:23:56,762 - annb.d909ff8743bc - INFO - [34mProcessed 1000/10000 queries...[0m
+2023-12-12 12:24:34,711 - annb.d909ff8743bc - INFO - [34mProcessed 2000/10000 queries...[0m
+2023-12-12 12:25:12,505 - annb.d909ff8743bc - INFO - [34mProcessed 3000/10000 queries...[0m
+2023-12-12 12:25:50,318 - annb.d909ff8743bc - INFO - [34mProcessed 4000/10000 queries...[0m
+2023-12-12 12:26:27,269 - annb.d909ff8743bc - INFO - [34mProcessed 5000/10000 queries...[0m
+2023-12-12 12:27:04,706 - annb.d909ff8743bc - INFO - [34mProcessed 6000/10000 queries...[0m
+2023-12-12 12:27:42,299 - annb.d909ff8743bc - INFO - [34mProcessed 7000/10000 queries...[0m
+2023-12-12 12:28:20,393 - annb.d909ff8743bc - INFO - [34mProcessed 8000/10000 queries...[0m
+2023-12-12 12:28:57,848 - annb.d909ff8743bc - INFO - [34mProcessed 9000/10000 queries...[0m
+2023-12-12 12:29:34,894 - annb.d909ff8743bc - INFO - [34mProcessed 10000/10000 queries...[0m
+2023-12-12 12:29:38,264 - annb.d909ff8743bc - INFO - Child process for container d909ff8743bc returned exit code 0 with message 
+2023-12-12 12:29:38,264 - annb.d909ff8743bc - INFO - Removing container
+2023-12-12 12:29:39,043 - annb - INFO - Terminating 1 workers

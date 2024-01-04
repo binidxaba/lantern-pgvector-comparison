@@ -1,0 +1,295 @@
++ python run.py --dataset sift-128-euclidean --algorithm lantern --timeout 18000 --batch --force
+2023-12-14 11:31:58,709 - annb - INFO - running only lantern
+2023-12-14 11:31:58,742 - annb - INFO - Order: [Definition(algorithm='lantern', constructor='Lantern', module='ann_benchmarks.algorithms.lantern', docker_tag='ann-benchmarks-lantern', arguments=['euclidean', {'M': 8, 'efConstruction': 128}], query_argument_groups=[[128]], disabled=False), Definition(algorithm='lantern', constructor='Lantern', module='ann_benchmarks.algorithms.lantern', docker_tag='ann-benchmarks-lantern', arguments=['euclidean', {'M': 16, 'efConstruction': 128}], query_argument_groups=[[128]], disabled=False)]
+2023-12-14 11:31:59,226 - annb.fd1157dd702e - INFO - Created container fd1157dd702e: CPU limit 0-7, mem limit 32448822016, timeout 18000, command ['--dataset', 'sift-128-euclidean', '--algorithm', 'lantern', '--module', 'ann_benchmarks.algorithms.lantern', '--constructor', 'Lantern', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 8, "efConstruction": 128}]', '[128]']
+2023-12-14 11:32:00,082 - annb.fd1157dd702e - INFO - ['euclidean', {'M': 8, 'efConstruction': 128}]
+2023-12-14 11:32:00,082 - annb.fd1157dd702e - INFO - Trying to instantiate ann_benchmarks.algorithms.lantern.Lantern(['euclidean', {'M': 8, 'efConstruction': 128}])
+2023-12-14 11:32:03,134 - annb.fd1157dd702e - INFO - Got a train set of size (1000000 * 128)
+2023-12-14 11:32:03,134 - annb.fd1157dd702e - INFO - Got 10000 queries
+2023-12-14 11:32:03,410 - annb.fd1157dd702e - INFO -  * Starting PostgreSQL 14 database server
+2023-12-14 11:32:08,523 - annb.fd1157dd702e - INFO -    ...done.
+2023-12-14 11:32:08,542 - annb.fd1157dd702e - INFO - copying data...
+2023-12-14 11:34:54,671 - annb.fd1157dd702e - INFO - creating index...
+2023-12-14 11:34:54,700 - annb.fd1157dd702e - INFO - [*] Creating index with parameters dimensions=128 m=8 ef=64 ef_construction=128
+2023-12-14 11:34:55,356 - annb.fd1157dd702e - INFO - [*] Items to index 1000000
+2023-12-14 11:34:57,491 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:34:59,600 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:01,774 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:03,950 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:06,360 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:09,284 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:11,743 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:14,590 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:17,579 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:20,994 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:24,321 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:27,853 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:31,379 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:35,138 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:38,978 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:42,757 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:46,642 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:50,732 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:54,791 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:35:58,895 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:02,841 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:06,879 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:11,365 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:15,439 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:19,657 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:23,943 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:28,253 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:32,697 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:37,018 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:41,353 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:45,921 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:50,336 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:54,647 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:36:58,758 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:03,148 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:07,460 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:11,929 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:16,046 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:20,331 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:24,367 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:28,829 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:33,522 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:38,211 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:42,610 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:46,766 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:51,508 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:37:56,388 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:01,055 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:05,646 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:10,432 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:14,915 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:19,487 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:24,247 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:28,854 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:33,560 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:38,345 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:42,619 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:47,492 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:51,832 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:38:56,699 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:01,123 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:05,897 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:10,663 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:15,487 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:20,083 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:24,506 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:29,326 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:34,094 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:38,525 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:43,215 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:47,817 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:52,390 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:39:56,999 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:02,021 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:06,818 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:11,668 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:16,696 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:21,510 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:26,294 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:30,733 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:35,738 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:40,287 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:44,723 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:49,396 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:54,468 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:40:59,453 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:04,071 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:09,452 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:14,653 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:19,890 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:24,660 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:29,058 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:33,821 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:38,749 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:43,937 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:49,262 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:53,288 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:41:57,594 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:42:01,681 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:42:06,426 - annb.fd1157dd702e - INFO - [*] 10000 items added to index
+2023-12-14 11:42:06,873 - annb.fd1157dd702e - INFO - [*] Index saved under /tmp/index.usearch
+2023-12-14 11:42:11,199 - annb.fd1157dd702e - INFO - done!
+2023-12-14 11:42:11,200 - annb.fd1157dd702e - INFO - Built index in 607.8950910568237
+2023-12-14 11:42:11,200 - annb.fd1157dd702e - INFO - Index size:  620704.0
+2023-12-14 11:42:11,200 - annb.fd1157dd702e - INFO - Running query argument group 1 of 1...
+2023-12-14 11:42:11,200 - annb.fd1157dd702e - INFO - Run 1/5...
+2023-12-14 11:42:43,349 - annb.fd1157dd702e - INFO - Run 2/5...
+2023-12-14 11:43:15,569 - annb.fd1157dd702e - INFO - Run 3/5...
+2023-12-14 11:43:47,712 - annb.fd1157dd702e - INFO - Run 4/5...
+2023-12-14 11:44:20,504 - annb.fd1157dd702e - INFO - Run 5/5...
+2023-12-14 11:44:55,810 - annb.fd1157dd702e - INFO - Child process for container fd1157dd702e returned exit code 0 with message
+2023-12-14 11:44:55,810 - annb.fd1157dd702e - INFO - Removing container
+2023-12-14 11:44:56,266 - annb.0b4c1e927a70 - INFO - Created container 0b4c1e927a70: CPU limit 0-7, mem limit 32416586496, timeout 18000, command ['--dataset', 'sift-128-euclidean', '--algorithm', 'lantern', '--module', 'ann_benchmarks.algorithms.lantern', '--constructor', 'Lantern', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 16, "efConstruction": 128}]', '[128]']
+2023-12-14 11:44:56,519 - annb.0b4c1e927a70 - INFO - ['euclidean', {'M': 16, 'efConstruction': 128}]
+2023-12-14 11:44:56,519 - annb.0b4c1e927a70 - INFO - Trying to instantiate ann_benchmarks.algorithms.lantern.Lantern(['euclidean', {'M': 16, 'efConstruction': 128}])
+2023-12-14 11:44:56,731 - annb.0b4c1e927a70 - INFO - Got a train set of size (1000000 * 128)
+2023-12-14 11:44:56,732 - annb.0b4c1e927a70 - INFO - Got 10000 queries
+2023-12-14 11:44:56,903 - annb.0b4c1e927a70 - INFO -  * Starting PostgreSQL 14 database server
+2023-12-14 11:45:01,684 - annb.0b4c1e927a70 - INFO -    ...done.
+2023-12-14 11:45:01,695 - annb.0b4c1e927a70 - INFO - copying data...
+2023-12-14 11:47:48,423 - annb.0b4c1e927a70 - INFO - creating index...
+2023-12-14 11:47:48,429 - annb.0b4c1e927a70 - INFO - [*] Creating index with parameters dimensions=128 m=16 ef=64 ef_construction=128
+2023-12-14 11:47:48,674 - annb.0b4c1e927a70 - INFO - [*] Items to index 1000000
+2023-12-14 11:47:51,073 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:47:53,645 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:47:56,356 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:47:59,202 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:02,750 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:06,676 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:10,708 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:15,078 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:18,529 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:23,187 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:28,087 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:33,540 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:38,866 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:44,143 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:49,480 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:48:54,651 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:49:00,316 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:49:05,554 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:49:10,990 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:49:16,062 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:49:20,693 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:49:27,015 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:49:33,694 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:49:39,711 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:49:46,094 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:49:52,001 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:49:58,417 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:50:03,985 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:50:10,348 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:50:16,994 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:50:23,475 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:50:30,094 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:50:36,936 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:50:43,711 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:50:50,327 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:50:57,115 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:51:04,064 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:51:11,257 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:51:18,388 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:51:25,322 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:51:31,316 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:51:37,791 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:51:45,054 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:51:52,383 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:51:58,777 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:52:04,632 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:52:11,820 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:52:18,740 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:52:25,978 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:52:33,152 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:52:39,812 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:52:47,171 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:52:53,605 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:53:01,309 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:53:07,402 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:53:14,188 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:53:21,314 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:53:27,823 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:53:34,714 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:53:42,346 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:53:49,596 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:53:57,004 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:54:03,528 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:54:10,685 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:54:17,183 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:54:24,331 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:54:31,766 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:54:39,017 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:54:46,743 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:54:53,399 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:55:00,985 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:55:07,526 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:55:14,733 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:55:21,664 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:55:28,641 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:55:35,290 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:55:42,931 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:55:50,039 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:55:56,655 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:56:04,829 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:56:12,743 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:56:20,053 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:56:27,575 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:56:35,000 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:56:40,669 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:56:48,588 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:56:56,050 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:57:02,672 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:57:08,889 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:57:15,960 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:57:24,270 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:57:32,191 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:57:40,088 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:57:47,461 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:57:56,074 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:58:03,901 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:58:11,622 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:58:18,981 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:58:27,388 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:58:35,036 - annb.0b4c1e927a70 - INFO - [*] 10000 items added to index
+2023-12-14 11:58:35,533 - annb.0b4c1e927a70 - INFO - [*] Index saved under /tmp/index.usearch
+2023-12-14 11:58:40,647 - annb.0b4c1e927a70 - INFO - done!
+2023-12-14 11:58:40,647 - annb.0b4c1e927a70 - INFO - Built index in 823.7808558940887
+2023-12-14 11:58:40,647 - annb.0b4c1e927a70 - INFO - Index size:  702840.0
+2023-12-14 11:58:40,647 - annb.0b4c1e927a70 - INFO - Running query argument group 1 of 1...
+2023-12-14 11:58:40,648 - annb.0b4c1e927a70 - INFO - Run 1/5...
+2023-12-14 11:59:30,845 - annb.0b4c1e927a70 - INFO - Run 2/5...
+2023-12-14 12:00:21,034 - annb.0b4c1e927a70 - INFO - Run 3/5...
+2023-12-14 12:01:11,141 - annb.0b4c1e927a70 - INFO - Run 4/5...
+2023-12-14 12:02:01,675 - annb.0b4c1e927a70 - INFO - Run 5/5...
+2023-12-14 12:02:54,582 - annb.0b4c1e927a70 - INFO - Child process for container 0b4c1e927a70 returned exit code 0 with message
+2023-12-14 12:02:54,582 - annb.0b4c1e927a70 - INFO - Removing container
+2023-12-14 12:02:54,830 - annb - INFO - Terminating 1 workers
++ python run.py --dataset sift-128-euclidean --algorithm pgvector --timeout 18000 --batch --force
+2023-12-14 12:02:55,439 - annb - INFO - running only pgvector
+2023-12-14 12:02:55,455 - annb - INFO - Order: [Definition(algorithm='pgvector', constructor='PGVector', module='ann_benchmarks.algorithms.pgvector', docker_tag='ann-benchmarks-pgvector', arguments=['euclidean', {'M': 8, 'efConstruction': 128}], query_argument_groups=[[128]], disabled=False), Definition(algorithm='pgvector', constructor='PGVector', module='ann_benchmarks.algorithms.pgvector', docker_tag='ann-benchmarks-pgvector', arguments=['euclidean', {'M': 16, 'efConstruction': 128}], query_argument_groups=[[128]], disabled=False)]
+2023-12-14 12:02:55,720 - annb.1cda700bc37c - INFO - Created container 1cda700bc37c: CPU limit 0-7, mem limit 32425884416, timeout 18000, command ['--dataset', 'sift-128-euclidean', '--algorithm', 'pgvector', '--module', 'ann_benchmarks.algorithms.pgvector', '--constructor', 'PGVector', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 8, "efConstruction": 128}]', '[128]']
+2023-12-14 12:02:56,001 - annb.1cda700bc37c - INFO - ['euclidean', {'M': 8, 'efConstruction': 128}]
+2023-12-14 12:02:56,001 - annb.1cda700bc37c - INFO - Trying to instantiate ann_benchmarks.algorithms.pgvector.PGVector(['euclidean', {'M': 8, 'efConstruction': 128}])
+2023-12-14 12:02:56,321 - annb.1cda700bc37c - INFO - Got a train set of size (1000000 * 128)
+2023-12-14 12:02:56,321 - annb.1cda700bc37c - INFO - Got 10000 queries
+2023-12-14 12:02:56,511 - annb.1cda700bc37c - INFO -  * Starting PostgreSQL 14 database server
+2023-12-14 12:03:01,842 - annb.1cda700bc37c - INFO -    ...done.
+2023-12-14 12:03:01,871 - annb.1cda700bc37c - INFO - copying data...
+2023-12-14 12:03:40,467 - annb.1cda700bc37c - INFO - creating index...
+2023-12-14 12:15:20,249 - annb.1cda700bc37c - INFO - done!
+2023-12-14 12:15:20,250 - annb.1cda700bc37c - INFO - Built index in 743.7926297187805
+2023-12-14 12:15:20,250 - annb.1cda700bc37c - INFO - Index size:  716720.0
+2023-12-14 12:15:20,250 - annb.1cda700bc37c - INFO - Running query argument group 1 of 1...
+2023-12-14 12:15:20,250 - annb.1cda700bc37c - INFO - Run 1/5...
+2023-12-14 12:15:39,159 - annb.1cda700bc37c - INFO - Run 2/5...
+2023-12-14 12:15:57,971 - annb.1cda700bc37c - INFO - Run 3/5...
+2023-12-14 12:16:16,696 - annb.1cda700bc37c - INFO - Run 4/5...
+2023-12-14 12:16:34,770 - annb.1cda700bc37c - INFO - Run 5/5...
+2023-12-14 12:16:55,451 - annb.1cda700bc37c - INFO - Child process for container 1cda700bc37c returned exit code 0 with message
+2023-12-14 12:16:55,451 - annb.1cda700bc37c - INFO - Removing container
+2023-12-14 12:16:55,919 - annb.fa952076319e - INFO - Created container fa952076319e: CPU limit 0-7, mem limit 32412080896, timeout 18000, command ['--dataset', 'sift-128-euclidean', '--algorithm', 'pgvector', '--module', 'ann_benchmarks.algorithms.pgvector', '--constructor', 'PGVector', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 16, "efConstruction": 128}]', '[128]']
+2023-12-14 12:16:56,184 - annb.fa952076319e - INFO - ['euclidean', {'M': 16, 'efConstruction': 128}]
+2023-12-14 12:16:56,184 - annb.fa952076319e - INFO - Trying to instantiate ann_benchmarks.algorithms.pgvector.PGVector(['euclidean', {'M': 16, 'efConstruction': 128}])
+2023-12-14 12:16:56,399 - annb.fa952076319e - INFO - Got a train set of size (1000000 * 128)
+2023-12-14 12:16:56,399 - annb.fa952076319e - INFO - Got 10000 queries
+2023-12-14 12:16:56,571 - annb.fa952076319e - INFO -  * Starting PostgreSQL 14 database server
+2023-12-14 12:17:01,553 - annb.fa952076319e - INFO -    ...done.
+2023-12-14 12:17:01,567 - annb.fa952076319e - INFO - copying data...
+2023-12-14 12:17:39,839 - annb.fa952076319e - INFO - creating index...
+2023-12-14 12:37:34,768 - annb.fa952076319e - INFO - done!
+2023-12-14 12:37:34,768 - annb.fa952076319e - INFO - Built index in 1238.2354691028595
+2023-12-14 12:37:34,769 - annb.fa952076319e - INFO - Index size:  800824.0
+2023-12-14 12:37:34,769 - annb.fa952076319e - INFO - Running query argument group 1 of 1...
+2023-12-14 12:37:34,769 - annb.fa952076319e - INFO - Run 1/5...
+2023-12-14 12:38:04,760 - annb.fa952076319e - INFO - Run 2/5...
+2023-12-14 12:38:34,375 - annb.fa952076319e - INFO - Run 3/5...
+2023-12-14 12:39:03,781 - annb.fa952076319e - INFO - Run 4/5...
+2023-12-14 12:39:33,267 - annb.fa952076319e - INFO - Run 5/5...
+2023-12-14 12:40:05,672 - annb.fa952076319e - INFO - Child process for container fa952076319e returned exit code 0 with message
+2023-12-14 12:40:05,672 - annb.fa952076319e - INFO - Removing container
+2023-12-14 12:40:05,904 - annb - INFO - Terminating 1 workers
+

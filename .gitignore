@@ -1,0 +1,3 @@
+*/*.tgz
+.ipynb_checkpoints/
+results.html

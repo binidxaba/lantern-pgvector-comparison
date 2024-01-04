@@ -1,0 +1,43 @@
+2023-12-14 12:02:55,439 - annb - INFO - running only pgvector
+2023-12-14 12:02:55,455 - annb - INFO - Order: [Definition(algorithm='pgvector', constructor='PGVector', module='ann_benchmarks.algorithms.pgvector', docker_tag='ann-benchmarks-pgvector', arguments=['euclidean', {'M': 8, 'efConstruction': 128}], query_argument_groups=[[128]], disabled=False), Definition(algorithm='pgvector', constructor='PGVector', module='ann_benchmarks.algorithms.pgvector', docker_tag='ann-benchmarks-pgvector', arguments=['euclidean', {'M': 16, 'efConstruction': 128}], query_argument_groups=[[128]], disabled=False)]
+2023-12-14 12:02:55,720 - annb.1cda700bc37c - INFO - Created container 1cda700bc37c: CPU limit 0-7, mem limit 32425884416, timeout 18000, command ['--dataset', 'sift-128-euclidean', '--algorithm', 'pgvector', '--module', 'ann_benchmarks.algorithms.pgvector', '--constructor', 'PGVector', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 8, "efConstruction": 128}]', '[128]']
+2023-12-14 12:02:56,001 - annb.1cda700bc37c - INFO - [34m['euclidean', {'M': 8, 'efConstruction': 128}][0m
+2023-12-14 12:02:56,001 - annb.1cda700bc37c - INFO - [34mTrying to instantiate ann_benchmarks.algorithms.pgvector.PGVector(['euclidean', {'M': 8, 'efConstruction': 128}])[0m
+2023-12-14 12:02:56,321 - annb.1cda700bc37c - INFO - [34mGot a train set of size (1000000 * 128)[0m
+2023-12-14 12:02:56,321 - annb.1cda700bc37c - INFO - [34mGot 10000 queries[0m
+2023-12-14 12:02:56,511 - annb.1cda700bc37c - INFO - [34m * Starting PostgreSQL 14 database server[0m
+2023-12-14 12:03:01,842 - annb.1cda700bc37c - INFO - [34m   ...done.[0m
+2023-12-14 12:03:01,871 - annb.1cda700bc37c - INFO - [34mcopying data...[0m
+2023-12-14 12:03:40,467 - annb.1cda700bc37c - INFO - [34mcreating index...[0m
+2023-12-14 12:15:20,249 - annb.1cda700bc37c - INFO - [34mdone![0m
+2023-12-14 12:15:20,250 - annb.1cda700bc37c - INFO - [34mBuilt index in 743.7926297187805[0m
+2023-12-14 12:15:20,250 - annb.1cda700bc37c - INFO - [34mIndex size:  716720.0[0m
+2023-12-14 12:15:20,250 - annb.1cda700bc37c - INFO - [34mRunning query argument group 1 of 1...[0m
+2023-12-14 12:15:20,250 - annb.1cda700bc37c - INFO - [34mRun 1/5...[0m
+2023-12-14 12:15:39,159 - annb.1cda700bc37c - INFO - [34mRun 2/5...[0m
+2023-12-14 12:15:57,971 - annb.1cda700bc37c - INFO - [34mRun 3/5...[0m
+2023-12-14 12:16:16,696 - annb.1cda700bc37c - INFO - [34mRun 4/5...[0m
+2023-12-14 12:16:34,770 - annb.1cda700bc37c - INFO - [34mRun 5/5...[0m
+2023-12-14 12:16:55,451 - annb.1cda700bc37c - INFO - Child process for container 1cda700bc37c returned exit code 0 with message 
+2023-12-14 12:16:55,451 - annb.1cda700bc37c - INFO - Removing container
+2023-12-14 12:16:55,919 - annb.fa952076319e - INFO - Created container fa952076319e: CPU limit 0-7, mem limit 32412080896, timeout 18000, command ['--dataset', 'sift-128-euclidean', '--algorithm', 'pgvector', '--module', 'ann_benchmarks.algorithms.pgvector', '--constructor', 'PGVector', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 16, "efConstruction": 128}]', '[128]']
+2023-12-14 12:16:56,184 - annb.fa952076319e - INFO - [34m['euclidean', {'M': 16, 'efConstruction': 128}][0m
+2023-12-14 12:16:56,184 - annb.fa952076319e - INFO - [34mTrying to instantiate ann_benchmarks.algorithms.pgvector.PGVector(['euclidean', {'M': 16, 'efConstruction': 128}])[0m
+2023-12-14 12:16:56,399 - annb.fa952076319e - INFO - [34mGot a train set of size (1000000 * 128)[0m
+2023-12-14 12:16:56,399 - annb.fa952076319e - INFO - [34mGot 10000 queries[0m
+2023-12-14 12:16:56,571 - annb.fa952076319e - INFO - [34m * Starting PostgreSQL 14 database server[0m
+2023-12-14 12:17:01,553 - annb.fa952076319e - INFO - [34m   ...done.[0m
+2023-12-14 12:17:01,567 - annb.fa952076319e - INFO - [34mcopying data...[0m
+2023-12-14 12:17:39,839 - annb.fa952076319e - INFO - [34mcreating index...[0m
+2023-12-14 12:37:34,768 - annb.fa952076319e - INFO - [34mdone![0m
+2023-12-14 12:37:34,768 - annb.fa952076319e - INFO - [34mBuilt index in 1238.2354691028595[0m
+2023-12-14 12:37:34,769 - annb.fa952076319e - INFO - [34mIndex size:  800824.0[0m
+2023-12-14 12:37:34,769 - annb.fa952076319e - INFO - [34mRunning query argument group 1 of 1...[0m
+2023-12-14 12:37:34,769 - annb.fa952076319e - INFO - [34mRun 1/5...[0m
+2023-12-14 12:38:04,760 - annb.fa952076319e - INFO - [34mRun 2/5...[0m
+2023-12-14 12:38:34,375 - annb.fa952076319e - INFO - [34mRun 3/5...[0m
+2023-12-14 12:39:03,781 - annb.fa952076319e - INFO - [34mRun 4/5...[0m
+2023-12-14 12:39:33,267 - annb.fa952076319e - INFO - [34mRun 5/5...[0m
+2023-12-14 12:40:05,672 - annb.fa952076319e - INFO - Child process for container fa952076319e returned exit code 0 with message 
+2023-12-14 12:40:05,672 - annb.fa952076319e - INFO - Removing container
+2023-12-14 12:40:05,904 - annb - INFO - Terminating 1 workers
