@@ -18,7 +18,7 @@ If you notice any error, please let me know.
 ![p95 m=16](./images/015-sift-latency-m16.png)
 ![Recall m=24](./images/016-sift-recall-m24.png)
 ![QPS m=24](./images/017-sift-qps-m24.png)
-![p95 m=24](./images/018-sift-p95-m24.png)
+![p95 m=24](./images/018-sift-latency-m24.png)
 
 
 ## Gist 960
@@ -29,7 +29,7 @@ If you notice any error, please let me know.
 ![p95 m=16](./images/025-gist-latency-m16.png)
 ![Recall m=24](./images/026-gist-recall-m24.png)
 ![QPS m=24](./images/027-gist-qps-m24.png)
-![p95 m=24](./images/028-gist-p95-m24.png)
+![p95 m=24](./images/028-gist-latency-m24.png)
 
 ## Glove 200
 ![Build Time](./images/031-glove-build-time.png)
@@ -39,4 +39,4 @@ If you notice any error, please let me know.
 ![p95 m=16](./images/035-glove-latency-m16.png)
 ![Recall m=24](./images/036-glove-recall-m24.png)
 ![QPS m=24](./images/037-glove-qps-m24.png)
-![p95 m=24](./images/038-glove-p95-m24.png)
+![p95 m=24](./images/038-glove-latency-m24.png)
