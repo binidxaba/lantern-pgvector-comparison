@@ -15,9 +15,9 @@ If you notice any error, please let me know.
 ![Index Size](./images/012-sift-index-size.png)
 ![Recall m=16](./images/013-sift-recall-m16.png)
 ![QPS m=16](./images/014-sift-qps-m16.png)
-![p95 m=16](./images/017-sift-p95-m16.png)
-![Recall m=24](./images/015-sift-recall-m24.png)
-![QPS m=24](./images/016-sift-qps-m24.png)
+![p95 m=16](./images/015-sift-latency-m16.png)
+![Recall m=24](./images/016-sift-recall-m24.png)
+![QPS m=24](./images/017-sift-qps-m24.png)
 ![p95 m=24](./images/018-sift-p95-m24.png)
 
 
@@ -26,9 +26,9 @@ If you notice any error, please let me know.
 ![Index Size](./images/022-gist-index-size.png)
 ![Recall m=16](./images/023-gist-recall-m16.png)
 ![QPS m=16](./images/024-gist-qps-m16.png)
-![p95 m=16](./images/027-gist-p95-m16.png)
-![Recall m=24](./images/025-gist-recall-m24.png)
-![QPS m=24](./images/026-gist-qps-m24.png)
+![p95 m=16](./images/025-gist-latency-m16.png)
+![Recall m=24](./images/026-gist-recall-m24.png)
+![QPS m=24](./images/027-gist-qps-m24.png)
 ![p95 m=24](./images/028-gist-p95-m24.png)
 
 ## Glove 200
@@ -36,7 +36,7 @@ If you notice any error, please let me know.
 ![Index Size](./images/032-glove-index-size.png)
 ![Recall m=16](./images/033-glove-recall-m16.png)
 ![QPS m=16](./images/034-glove-qps-m16.png)
-![p95 m=16](./images/037-glove-p95-m16.png)
-![Recall m=24](./images/035-glove-recall-m24.png)
-![QPS m=24](./images/036-glove-qps-m24.png)
+![p95 m=16](./images/035-glove-latency-m16.png)
+![Recall m=24](./images/036-glove-recall-m24.png)
+![QPS m=24](./images/037-glove-qps-m24.png)
 ![p95 m=24](./images/038-glove-p95-m24.png)

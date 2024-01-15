@@ -1,0 +1,127 @@
+2024-01-12 23:31:11,386 - annb - INFO - running only pgvector
+2024-01-12 23:31:11,593 - annb - INFO - Order: [Definition(algorithm='pgvector', constructor='PGVector', module='ann_benchmarks.algorithms.pgvector', docker_tag='ann-benchmarks-pgvector', arguments=['euclidean', {'M': 24, 'efConstruction': 200}], query_argument_groups=[[10], [20], [40], [80], [120], [200], [400], [800]], disabled=False), Definition(algorithm='pgvector', constructor='PGVector', module='ann_benchmarks.algorithms.pgvector', docker_tag='ann-benchmarks-pgvector', arguments=['euclidean', {'M': 16, 'efConstruction': 200}], query_argument_groups=[[10], [20], [40], [80], [120], [200], [400], [800]], disabled=False)]
+2024-01-12 23:31:12,646 - annb.b1bd88b058d1 - INFO - Created container b1bd88b058d1: CPU limit 0-7, mem limit 32258353920, timeout 18000, command ['--dataset', 'gist-960-euclidean', '--algorithm', 'pgvector', '--module', 'ann_benchmarks.algorithms.pgvector', '--constructor', 'PGVector', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 24, "efConstruction": 200}]', '[10]', '[20]', '[40]', '[80]', '[120]', '[200]', '[400]', '[800]']
+2024-01-12 23:31:13,612 - annb.b1bd88b058d1 - INFO - [34m['euclidean', {'M': 24, 'efConstruction': 200}][0m
+2024-01-12 23:31:13,612 - annb.b1bd88b058d1 - INFO - [34mTrying to instantiate ann_benchmarks.algorithms.pgvector.PGVector(['euclidean', {'M': 24, 'efConstruction': 200}])[0m
+2024-01-12 23:31:36,829 - annb.b1bd88b058d1 - INFO - [34mGot a train set of size (1000000 * 960)[0m
+2024-01-12 23:31:36,830 - annb.b1bd88b058d1 - INFO - [34mGot 1000 queries[0m
+2024-01-12 23:31:42,665 - annb.b1bd88b058d1 - INFO - [34m * Starting PostgreSQL 15 database server[0m
+2024-01-12 23:31:50,822 - annb.b1bd88b058d1 - INFO - [34m   ...done.[0m
+2024-01-12 23:31:50,865 - annb.b1bd88b058d1 - INFO - [34mcopying data...[0m
+2024-01-12 23:47:44,988 - annb.b1bd88b058d1 - INFO - [34mcreating index...[0m
+2024-01-13 02:34:16,063 - annb.b1bd88b058d1 - INFO - [34mdone![0m
+2024-01-13 02:34:16,065 - annb.b1bd88b058d1 - INFO - [34mBuilt index in 10953.571647644043[0m
+2024-01-13 02:34:16,065 - annb.b1bd88b058d1 - INFO - [34mIndex size:  7862960.0[0m
+2024-01-13 02:34:16,065 - annb.b1bd88b058d1 - INFO - [34mRunning query argument group 1 of 8...[0m
+2024-01-13 02:34:16,066 - annb.b1bd88b058d1 - INFO - [34mRun 1/5...[0m
+2024-01-13 02:34:25,236 - annb.b1bd88b058d1 - INFO - [34mRun 2/5...[0m
+2024-01-13 02:34:28,137 - annb.b1bd88b058d1 - INFO - [34mRun 3/5...[0m
+2024-01-13 02:34:30,844 - annb.b1bd88b058d1 - INFO - [34mRun 4/5...[0m
+2024-01-13 02:34:33,338 - annb.b1bd88b058d1 - INFO - [34mRun 5/5...[0m
+2024-01-13 02:34:36,114 - annb.b1bd88b058d1 - INFO - [34mRunning query argument group 2 of 8...[0m
+2024-01-13 02:34:36,114 - annb.b1bd88b058d1 - INFO - [34mRun 1/5...[0m
+2024-01-13 02:34:41,070 - annb.b1bd88b058d1 - INFO - [34mRun 2/5...[0m
+2024-01-13 02:34:45,111 - annb.b1bd88b058d1 - INFO - [34mRun 3/5...[0m
+2024-01-13 02:34:49,243 - annb.b1bd88b058d1 - INFO - [34mRun 4/5...[0m
+2024-01-13 02:34:53,361 - annb.b1bd88b058d1 - INFO - [34mRun 5/5...[0m
+2024-01-13 02:34:57,422 - annb.b1bd88b058d1 - INFO - [34mRunning query argument group 3 of 8...[0m
+2024-01-13 02:34:57,423 - annb.b1bd88b058d1 - INFO - [34mRun 1/5...[0m
+2024-01-13 02:35:03,864 - annb.b1bd88b058d1 - INFO - [34mRun 2/5...[0m
+2024-01-13 02:35:09,098 - annb.b1bd88b058d1 - INFO - [34mRun 3/5...[0m
+2024-01-13 02:35:14,694 - annb.b1bd88b058d1 - INFO - [34mRun 4/5...[0m
+2024-01-13 02:35:20,824 - annb.b1bd88b058d1 - INFO - [34mRun 5/5...[0m
+2024-01-13 02:35:27,557 - annb.b1bd88b058d1 - INFO - [34mRunning query argument group 4 of 8...[0m
+2024-01-13 02:35:27,558 - annb.b1bd88b058d1 - INFO - [34mRun 1/5...[0m
+2024-01-13 02:35:38,291 - annb.b1bd88b058d1 - INFO - [34mRun 2/5...[0m
+2024-01-13 02:35:48,963 - annb.b1bd88b058d1 - INFO - [34mRun 3/5...[0m
+2024-01-13 02:35:58,537 - annb.b1bd88b058d1 - INFO - [34mRun 4/5...[0m
+2024-01-13 02:36:08,546 - annb.b1bd88b058d1 - INFO - [34mRun 5/5...[0m
+2024-01-13 02:36:18,835 - annb.b1bd88b058d1 - INFO - [34mRunning query argument group 5 of 8...[0m
+2024-01-13 02:36:18,836 - annb.b1bd88b058d1 - INFO - [34mRun 1/5...[0m
+2024-01-13 02:36:33,368 - annb.b1bd88b058d1 - INFO - [34mRun 2/5...[0m
+2024-01-13 02:36:46,840 - annb.b1bd88b058d1 - INFO - [34mRun 3/5...[0m
+2024-01-13 02:36:58,742 - annb.b1bd88b058d1 - INFO - [34mRun 4/5...[0m
+2024-01-13 02:37:10,991 - annb.b1bd88b058d1 - INFO - [34mRun 5/5...[0m
+2024-01-13 02:37:23,032 - annb.b1bd88b058d1 - INFO - [34mRunning query argument group 6 of 8...[0m
+2024-01-13 02:37:23,033 - annb.b1bd88b058d1 - INFO - [34mRun 1/5...[0m
+2024-01-13 02:37:41,599 - annb.b1bd88b058d1 - INFO - [34mRun 2/5...[0m
+2024-01-13 02:38:00,562 - annb.b1bd88b058d1 - INFO - [34mRun 3/5...[0m
+2024-01-13 02:38:19,293 - annb.b1bd88b058d1 - INFO - [34mRun 4/5...[0m
+2024-01-13 02:38:37,779 - annb.b1bd88b058d1 - INFO - [34mRun 5/5...[0m
+2024-01-13 02:38:56,921 - annb.b1bd88b058d1 - INFO - [34mRunning query argument group 7 of 8...[0m
+2024-01-13 02:38:56,922 - annb.b1bd88b058d1 - INFO - [34mRun 1/5...[0m
+2024-01-13 02:39:28,358 - annb.b1bd88b058d1 - INFO - [34mRun 2/5...[0m
+2024-01-13 02:40:01,258 - annb.b1bd88b058d1 - INFO - [34mRun 3/5...[0m
+2024-01-13 02:40:32,316 - annb.b1bd88b058d1 - INFO - [34mRun 4/5...[0m
+2024-01-13 02:41:02,815 - annb.b1bd88b058d1 - INFO - [34mRun 5/5...[0m
+2024-01-13 02:41:40,614 - annb.b1bd88b058d1 - INFO - [34mRunning query argument group 8 of 8...[0m
+2024-01-13 02:41:40,615 - annb.b1bd88b058d1 - INFO - [34mRun 1/5...[0m
+2024-01-13 02:42:42,089 - annb.b1bd88b058d1 - INFO - [34mRun 2/5...[0m
+2024-01-13 02:43:36,891 - annb.b1bd88b058d1 - INFO - [34mRun 3/5...[0m
+2024-01-13 02:44:32,480 - annb.b1bd88b058d1 - INFO - [34mRun 4/5...[0m
+2024-01-13 02:45:25,976 - annb.b1bd88b058d1 - INFO - [34mRun 5/5...[0m
+2024-01-13 02:46:21,287 - annb.b1bd88b058d1 - INFO - Child process for container b1bd88b058d1 returned exit code 0 with message None
+2024-01-13 02:46:21,288 - annb.b1bd88b058d1 - INFO - Removing container
+2024-01-13 02:46:23,269 - annb.670d082b0ce2 - INFO - Created container 670d082b0ce2: CPU limit 0-7, mem limit 32259869440, timeout 18000, command ['--dataset', 'gist-960-euclidean', '--algorithm', 'pgvector', '--module', 'ann_benchmarks.algorithms.pgvector', '--constructor', 'PGVector', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 16, "efConstruction": 200}]', '[10]', '[20]', '[40]', '[80]', '[120]', '[200]', '[400]', '[800]']
+2024-01-13 02:46:24,228 - annb.670d082b0ce2 - INFO - [34m['euclidean', {'M': 16, 'efConstruction': 200}][0m
+2024-01-13 02:46:24,228 - annb.670d082b0ce2 - INFO - [34mTrying to instantiate ann_benchmarks.algorithms.pgvector.PGVector(['euclidean', {'M': 16, 'efConstruction': 200}])[0m
+2024-01-13 02:46:33,511 - annb.670d082b0ce2 - INFO - [34mGot a train set of size (1000000 * 960)[0m
+2024-01-13 02:46:33,511 - annb.670d082b0ce2 - INFO - [34mGot 1000 queries[0m
+2024-01-13 02:46:38,319 - annb.670d082b0ce2 - INFO - [34m * Starting PostgreSQL 15 database server[0m
+2024-01-13 02:46:46,025 - annb.670d082b0ce2 - INFO - [34m   ...done.[0m
+2024-01-13 02:46:46,056 - annb.670d082b0ce2 - INFO - [34mcopying data...[0m
+2024-01-13 03:02:25,443 - annb.670d082b0ce2 - INFO - [34mcreating index...[0m
+2024-01-13 04:58:32,486 - annb.670d082b0ce2 - INFO - [34mdone![0m
+2024-01-13 04:58:32,491 - annb.670d082b0ce2 - INFO - [34mBuilt index in 7914.241018533707[0m
+2024-01-13 04:58:32,492 - annb.670d082b0ce2 - INFO - [34mIndex size:  7863656.0[0m
+2024-01-13 04:58:32,492 - annb.670d082b0ce2 - INFO - [34mRunning query argument group 1 of 8...[0m
+2024-01-13 04:58:32,492 - annb.670d082b0ce2 - INFO - [34mRun 1/5...[0m
+2024-01-13 04:58:39,349 - annb.670d082b0ce2 - INFO - [34mRun 2/5...[0m
+2024-01-13 04:58:41,405 - annb.670d082b0ce2 - INFO - [34mRun 3/5...[0m
+2024-01-13 04:58:43,234 - annb.670d082b0ce2 - INFO - [34mRun 4/5...[0m
+2024-01-13 04:58:45,178 - annb.670d082b0ce2 - INFO - [34mRun 5/5...[0m
+2024-01-13 04:58:47,451 - annb.670d082b0ce2 - INFO - [34mRunning query argument group 2 of 8...[0m
+2024-01-13 04:58:47,452 - annb.670d082b0ce2 - INFO - [34mRun 1/5...[0m
+2024-01-13 04:58:51,239 - annb.670d082b0ce2 - INFO - [34mRun 2/5...[0m
+2024-01-13 04:58:53,635 - annb.670d082b0ce2 - INFO - [34mRun 3/5...[0m
+2024-01-13 04:58:56,651 - annb.670d082b0ce2 - INFO - [34mRun 4/5...[0m
+2024-01-13 04:58:59,264 - annb.670d082b0ce2 - INFO - [34mRun 5/5...[0m
+2024-01-13 04:59:02,511 - annb.670d082b0ce2 - INFO - [34mRunning query argument group 3 of 8...[0m
+2024-01-13 04:59:02,512 - annb.670d082b0ce2 - INFO - [34mRun 1/5...[0m
+2024-01-13 04:59:07,769 - annb.670d082b0ce2 - INFO - [34mRun 2/5...[0m
+2024-01-13 04:59:11,747 - annb.670d082b0ce2 - INFO - [34mRun 3/5...[0m
+2024-01-13 04:59:16,212 - annb.670d082b0ce2 - INFO - [34mRun 4/5...[0m
+2024-01-13 04:59:20,843 - annb.670d082b0ce2 - INFO - [34mRun 5/5...[0m
+2024-01-13 04:59:25,183 - annb.670d082b0ce2 - INFO - [34mRunning query argument group 4 of 8...[0m
+2024-01-13 04:59:25,183 - annb.670d082b0ce2 - INFO - [34mRun 1/5...[0m
+2024-01-13 04:59:32,389 - annb.670d082b0ce2 - INFO - [34mRun 2/5...[0m
+2024-01-13 04:59:38,658 - annb.670d082b0ce2 - INFO - [34mRun 3/5...[0m
+2024-01-13 04:59:45,192 - annb.670d082b0ce2 - INFO - [34mRun 4/5...[0m
+2024-01-13 04:59:51,949 - annb.670d082b0ce2 - INFO - [34mRun 5/5...[0m
+2024-01-13 04:59:59,577 - annb.670d082b0ce2 - INFO - [34mRunning query argument group 5 of 8...[0m
+2024-01-13 04:59:59,577 - annb.670d082b0ce2 - INFO - [34mRun 1/5...[0m
+2024-01-13 05:00:08,511 - annb.670d082b0ce2 - INFO - [34mRun 2/5...[0m
+2024-01-13 05:00:18,181 - annb.670d082b0ce2 - INFO - [34mRun 3/5...[0m
+2024-01-13 05:00:26,826 - annb.670d082b0ce2 - INFO - [34mRun 4/5...[0m
+2024-01-13 05:00:36,246 - annb.670d082b0ce2 - INFO - [34mRun 5/5...[0m
+2024-01-13 05:00:45,808 - annb.670d082b0ce2 - INFO - [34mRunning query argument group 6 of 8...[0m
+2024-01-13 05:00:45,808 - annb.670d082b0ce2 - INFO - [34mRun 1/5...[0m
+2024-01-13 05:00:58,869 - annb.670d082b0ce2 - INFO - [34mRun 2/5...[0m
+2024-01-13 05:01:12,921 - annb.670d082b0ce2 - INFO - [34mRun 3/5...[0m
+2024-01-13 05:01:26,996 - annb.670d082b0ce2 - INFO - [34mRun 4/5...[0m
+2024-01-13 05:01:40,808 - annb.670d082b0ce2 - INFO - [34mRun 5/5...[0m
+2024-01-13 05:01:54,426 - annb.670d082b0ce2 - INFO - [34mRunning query argument group 7 of 8...[0m
+2024-01-13 05:01:54,426 - annb.670d082b0ce2 - INFO - [34mRun 1/5...[0m
+2024-01-13 05:02:18,111 - annb.670d082b0ce2 - INFO - [34mRun 2/5...[0m
+2024-01-13 05:02:42,707 - annb.670d082b0ce2 - INFO - [34mRun 3/5...[0m
+2024-01-13 05:03:05,557 - annb.670d082b0ce2 - INFO - [34mRun 4/5...[0m
+2024-01-13 05:03:30,058 - annb.670d082b0ce2 - INFO - [34mRun 5/5...[0m
+2024-01-13 05:03:54,343 - annb.670d082b0ce2 - INFO - [34mRunning query argument group 8 of 8...[0m
+2024-01-13 05:03:54,344 - annb.670d082b0ce2 - INFO - [34mRun 1/5...[0m
+2024-01-13 05:04:38,473 - annb.670d082b0ce2 - INFO - [34mRun 2/5...[0m
+2024-01-13 05:05:19,525 - annb.670d082b0ce2 - INFO - [34mRun 3/5...[0m
+2024-01-13 05:06:00,110 - annb.670d082b0ce2 - INFO - [34mRun 4/5...[0m
+2024-01-13 05:06:40,296 - annb.670d082b0ce2 - INFO - [34mRun 5/5...[0m
+2024-01-13 05:07:33,698 - annb.670d082b0ce2 - INFO - Child process for container 670d082b0ce2 returned exit code 0 with message None
+2024-01-13 05:07:33,698 - annb.670d082b0ce2 - INFO - Removing container
+2024-01-13 05:07:35,024 - annb - INFO - Terminating 1 workers

@@ -1,0 +1,294 @@
++ python run.py --dataset sift-128-euclidean --algorithm lantern --timeout 18000 --batch --force
+2024-01-12 16:04:17,747 - annb - INFO - running only lantern
+2024-01-12 16:04:17,786 - annb - INFO - Order: [Definition(algorithm='lantern', constructor='Lantern', module='ann_benchmarks.algorithms.lantern', docker_tag='ann-benchmarks-lantern', arguments=['euclidean', {'M': 8, 'efConstruction': 128}], query_argument_groups=[[128]], disabled=False), Definition(algorithm='lantern', constructor='Lantern', module='ann_benchmarks.algorithms.lantern', docker_tag='ann-benchmarks-lantern', arguments=['euclidean', {'M': 16, 'efConstruction': 128}], query_argument_groups=[[128]], disabled=False)]
+2024-01-12 16:04:18,138 - annb.298ab1f162f5 - INFO - Created container 298ab1f162f5: CPU limit 0-7, mem limit 32215481088, timeout 18000, command ['--dataset', 'sift-128-euclidean', '--algorithm', 'lantern', '--module', 'ann_benchmarks.algorithms.lantern', '--constructor', 'Lantern', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 8, "efConstruction": 128}]', '[128]']
+2024-01-12 16:04:18,566 - annb.298ab1f162f5 - INFO - [34m['euclidean', {'M': 8, 'efConstruction': 128}][0m
+2024-01-12 16:04:18,567 - annb.298ab1f162f5 - INFO - [34mTrying to instantiate ann_benchmarks.algorithms.lantern.Lantern(['euclidean', {'M': 8, 'efConstruction': 128}])[0m
+2024-01-12 16:04:19,651 - annb.298ab1f162f5 - INFO - [34mGot a train set of size (1000000 * 128)[0m
+2024-01-12 16:04:19,651 - annb.298ab1f162f5 - INFO - [34mGot 10000 queries[0m
+2024-01-12 16:04:20,287 - annb.298ab1f162f5 - INFO - [34m * Starting PostgreSQL 15 database server[0m
+2024-01-12 16:04:28,135 - annb.298ab1f162f5 - INFO - [34m   ...done.[0m
+2024-01-12 16:04:28,156 - annb.298ab1f162f5 - INFO - [34mcopying data...[0m
+2024-01-12 16:07:54,254 - annb.298ab1f162f5 - INFO - [34mcreating index...[0m
+2024-01-12 16:07:54,271 - annb.298ab1f162f5 - INFO - [34m[*] Creating index with parameters dimensions=128 m=8 ef=64 ef_construction=128[0m
+2024-01-12 16:07:54,890 - annb.298ab1f162f5 - INFO - [34m[*] Items to index 1000000[0m
+2024-01-12 16:07:57,622 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:01,285 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:05,529 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:10,026 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:14,344 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:18,923 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:23,885 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:29,254 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:34,682 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:40,061 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:45,077 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:50,883 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:08:56,585 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:09:02,433 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:09:08,225 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:09:14,096 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:09:20,182 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:09:26,550 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:09:32,752 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:09:38,839 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:09:45,075 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:09:51,218 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:09:57,430 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:10:03,715 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:10:10,117 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:10:16,435 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:10:22,872 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:10:29,103 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:10:35,264 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:10:42,195 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:10:48,720 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:10:55,157 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:11:01,635 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:11:08,328 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:11:14,959 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:11:21,563 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:11:27,887 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:11:34,328 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:11:40,508 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:11:46,737 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:11:53,756 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:11:59,100 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:12:05,779 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:12:12,613 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:12:19,379 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:12:26,552 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:12:32,704 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:12:39,272 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:12:46,045 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:12:52,797 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:12:59,725 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:13:06,593 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:13:13,022 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:13:19,803 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:13:26,247 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:13:33,589 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:13:40,011 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:13:47,498 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:13:54,832 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:14:00,800 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:14:07,367 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:14:14,687 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:14:20,108 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:14:27,121 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:14:34,373 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:14:41,240 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:14:47,767 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:14:54,563 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:15:01,264 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:15:08,167 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:15:14,454 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:15:21,395 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:15:27,652 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:15:33,895 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:15:40,329 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:15:47,192 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:15:54,508 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:16:01,334 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:16:07,650 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:16:14,212 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:16:20,765 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:16:27,159 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:16:34,626 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:16:42,241 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:16:48,732 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:16:55,835 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:17:02,873 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:17:10,275 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:17:17,104 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:17:23,612 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:17:30,431 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:17:36,707 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:17:43,585 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:17:50,383 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:17:57,043 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:18:04,103 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:18:11,868 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:18:20,053 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:18:26,099 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:18:33,030 - annb.298ab1f162f5 - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:18:33,795 - annb.298ab1f162f5 - INFO - [34m[*] Index saved under /tmp/index.usearch[0m
+2024-01-12 16:18:38,893 - annb.298ab1f162f5 - INFO - [34mdone![0m
+2024-01-12 16:18:38,893 - annb.298ab1f162f5 - INFO - [34mBuilt index in 858.6696102619171[0m
+2024-01-12 16:18:38,893 - annb.298ab1f162f5 - INFO - [34mIndex size:  620704.0[0m
+2024-01-12 16:18:38,893 - annb.298ab1f162f5 - INFO - [34mRunning query argument group 1 of 1...[0m
+2024-01-12 16:18:38,896 - annb.298ab1f162f5 - INFO - [34mRun 1/5...[0m
+2024-01-12 16:19:25,678 - annb.298ab1f162f5 - INFO - [34mRun 2/5...[0m
+2024-01-12 16:20:12,176 - annb.298ab1f162f5 - INFO - [34mRun 3/5...[0m
+2024-01-12 16:20:57,827 - annb.298ab1f162f5 - INFO - [34mRun 4/5...[0m
+2024-01-12 16:21:42,953 - annb.298ab1f162f5 - INFO - [34mRun 5/5...[0m
+2024-01-12 16:22:32,311 - annb.298ab1f162f5 - INFO - Child process for container 298ab1f162f5 returned exit code 0 with message 
+2024-01-12 16:22:32,311 - annb.298ab1f162f5 - INFO - Removing container
+2024-01-12 16:22:33,027 - annb.e8cce3173dce - INFO - Created container e8cce3173dce: CPU limit 0-7, mem limit 32201427712, timeout 18000, command ['--dataset', 'sift-128-euclidean', '--algorithm', 'lantern', '--module', 'ann_benchmarks.algorithms.lantern', '--constructor', 'Lantern', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 16, "efConstruction": 128}]', '[128]']
+2024-01-12 16:22:33,423 - annb.e8cce3173dce - INFO - [34m['euclidean', {'M': 16, 'efConstruction': 128}][0m
+2024-01-12 16:22:33,423 - annb.e8cce3173dce - INFO - [34mTrying to instantiate ann_benchmarks.algorithms.lantern.Lantern(['euclidean', {'M': 16, 'efConstruction': 128}])[0m
+2024-01-12 16:22:34,392 - annb.e8cce3173dce - INFO - [34mGot a train set of size (1000000 * 128)[0m
+2024-01-12 16:22:34,393 - annb.e8cce3173dce - INFO - [34mGot 10000 queries[0m
+2024-01-12 16:22:34,922 - annb.e8cce3173dce - INFO - [34m * Starting PostgreSQL 15 database server[0m
+2024-01-12 16:22:43,170 - annb.e8cce3173dce - INFO - [34m   ...done.[0m
+2024-01-12 16:22:43,190 - annb.e8cce3173dce - INFO - [34mcopying data...[0m
+2024-01-12 16:26:11,710 - annb.e8cce3173dce - INFO - [34mcreating index...[0m
+2024-01-12 16:26:11,726 - annb.e8cce3173dce - INFO - [34m[*] Creating index with parameters dimensions=128 m=16 ef=64 ef_construction=128[0m
+2024-01-12 16:26:12,141 - annb.e8cce3173dce - INFO - [34m[*] Items to index 1000000[0m
+2024-01-12 16:26:15,290 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:26:19,442 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:26:24,630 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:26:30,031 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:26:37,383 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:26:44,765 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:26:52,214 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:27:00,590 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:27:08,914 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:27:15,243 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:27:23,777 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:27:32,478 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:27:41,939 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:27:50,865 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:28:00,024 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:28:08,646 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:28:17,947 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:28:25,995 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:28:34,712 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:28:44,613 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:28:53,985 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:29:04,194 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:29:13,712 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:29:23,204 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:29:33,209 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:29:43,276 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:29:53,041 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:30:02,204 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:30:12,969 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:30:23,865 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:30:32,807 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:30:42,951 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:30:53,134 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:31:00,612 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:31:10,710 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:31:21,347 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:31:29,342 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:31:40,612 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:31:50,498 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:31:59,782 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:32:10,728 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:32:20,712 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:32:31,136 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:32:41,606 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:32:52,265 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:33:02,935 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:33:14,328 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:33:24,821 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:33:33,736 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:33:44,575 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:33:56,035 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:34:06,991 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:34:17,321 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:34:28,329 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:34:38,603 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:34:48,727 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:34:58,945 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:35:10,050 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:35:20,305 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:35:31,070 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:35:42,137 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:35:52,661 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:36:02,316 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:36:13,888 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:36:23,437 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:36:33,900 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:36:44,290 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:36:53,473 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:37:05,534 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:37:15,707 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:37:25,819 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:37:37,050 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:37:48,220 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:37:59,532 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:38:10,995 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:38:22,577 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:38:32,620 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:38:42,805 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:38:54,492 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:39:06,178 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:39:18,007 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:39:29,836 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:39:40,931 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:39:52,501 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:40:04,509 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:40:16,939 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:40:27,162 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:40:38,382 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:40:50,358 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:41:02,130 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:41:14,880 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:41:27,926 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:41:39,819 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:41:52,042 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:42:03,638 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:42:17,206 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:42:28,843 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:42:40,743 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:42:52,214 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:43:04,550 - annb.e8cce3173dce - INFO - [34m[*] 10000 items added to index[0m
+2024-01-12 16:43:05,419 - annb.e8cce3173dce - INFO - [34m[*] Index saved under /tmp/index.usearch[0m
+2024-01-12 16:43:11,821 - annb.e8cce3173dce - INFO - [34mdone![0m
+2024-01-12 16:43:11,821 - annb.e8cce3173dce - INFO - [34mBuilt index in 1236.958055973053[0m
+2024-01-12 16:43:11,821 - annb.e8cce3173dce - INFO - [34mIndex size:  702840.0[0m
+2024-01-12 16:43:11,822 - annb.e8cce3173dce - INFO - [34mRunning query argument group 1 of 1...[0m
+2024-01-12 16:43:11,822 - annb.e8cce3173dce - INFO - [34mRun 1/5...[0m
+2024-01-12 16:44:23,994 - annb.e8cce3173dce - INFO - [34mRun 2/5...[0m
+2024-01-12 16:45:35,396 - annb.e8cce3173dce - INFO - [34mRun 3/5...[0m
+2024-01-12 16:46:47,080 - annb.e8cce3173dce - INFO - [34mRun 4/5...[0m
+2024-01-12 16:47:58,569 - annb.e8cce3173dce - INFO - [34mRun 5/5...[0m
+2024-01-12 16:49:11,082 - annb.e8cce3173dce - INFO - Child process for container e8cce3173dce returned exit code 0 with message 
+2024-01-12 16:49:11,082 - annb.e8cce3173dce - INFO - Removing container
+2024-01-12 16:49:11,510 - annb - INFO - Terminating 1 workers
++ python run.py --dataset sift-128-euclidean --algorithm pgvector --timeout 18000 --batch --force
+2024-01-12 16:49:12,579 - annb - INFO - running only pgvector
+2024-01-12 16:49:12,612 - annb - INFO - Order: [Definition(algorithm='pgvector', constructor='PGVector', module='ann_benchmarks.algorithms.pgvector', docker_tag='ann-benchmarks-pgvector', arguments=['euclidean', {'M': 16, 'efConstruction': 128}], query_argument_groups=[[128]], disabled=False), Definition(algorithm='pgvector', constructor='PGVector', module='ann_benchmarks.algorithms.pgvector', docker_tag='ann-benchmarks-pgvector', arguments=['euclidean', {'M': 8, 'efConstruction': 128}], query_argument_groups=[[128]], disabled=False)]
+2024-01-12 16:49:12,982 - annb.594ef8b9e598 - INFO - Created container 594ef8b9e598: CPU limit 0-7, mem limit 32210234112, timeout 18000, command ['--dataset', 'sift-128-euclidean', '--algorithm', 'pgvector', '--module', 'ann_benchmarks.algorithms.pgvector', '--constructor', 'PGVector', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 16, "efConstruction": 128}]', '[128]']
+2024-01-12 16:49:13,392 - annb.594ef8b9e598 - INFO - [34m['euclidean', {'M': 16, 'efConstruction': 128}][0m
+2024-01-12 16:49:13,392 - annb.594ef8b9e598 - INFO - [34mTrying to instantiate ann_benchmarks.algorithms.pgvector.PGVector(['euclidean', {'M': 16, 'efConstruction': 128}])[0m
+2024-01-12 16:49:14,200 - annb.594ef8b9e598 - INFO - [34mGot a train set of size (1000000 * 128)[0m
+2024-01-12 16:49:14,200 - annb.594ef8b9e598 - INFO - [34mGot 10000 queries[0m
+2024-01-12 16:49:14,736 - annb.594ef8b9e598 - INFO - [34m * Starting PostgreSQL 15 database server[0m
+2024-01-12 16:49:22,687 - annb.594ef8b9e598 - INFO - [34m   ...done.[0m
+2024-01-12 16:49:22,715 - annb.594ef8b9e598 - INFO - [34mcopying data...[0m
+2024-01-12 16:50:08,521 - annb.594ef8b9e598 - INFO - [34mcreating index...[0m
+2024-01-12 17:19:16,286 - annb.594ef8b9e598 - INFO - [34mdone![0m
+2024-01-12 17:19:16,288 - annb.594ef8b9e598 - INFO - [34mBuilt index in 1801.612820148468[0m
+2024-01-12 17:19:16,288 - annb.594ef8b9e598 - INFO - [34mIndex size:  800776.0[0m
+2024-01-12 17:19:16,288 - annb.594ef8b9e598 - INFO - [34mRunning query argument group 1 of 1...[0m
+2024-01-12 17:19:16,289 - annb.594ef8b9e598 - INFO - [34mRun 1/5...[0m
+2024-01-12 17:20:05,828 - annb.594ef8b9e598 - INFO - [34mRun 2/5...[0m
+2024-01-12 17:20:54,346 - annb.594ef8b9e598 - INFO - [34mRun 3/5...[0m
+2024-01-12 17:21:44,453 - annb.594ef8b9e598 - INFO - [34mRun 4/5...[0m
+2024-01-12 17:22:33,367 - annb.594ef8b9e598 - INFO - [34mRun 5/5...[0m
+2024-01-12 17:23:25,673 - annb.594ef8b9e598 - INFO - Child process for container 594ef8b9e598 returned exit code 0 with message 
+2024-01-12 17:23:25,673 - annb.594ef8b9e598 - INFO - Removing container
+2024-01-12 17:23:26,449 - annb.32f69ab81cf6 - INFO - Created container 32f69ab81cf6: CPU limit 0-7, mem limit 32197544704, timeout 18000, command ['--dataset', 'sift-128-euclidean', '--algorithm', 'pgvector', '--module', 'ann_benchmarks.algorithms.pgvector', '--constructor', 'PGVector', '--runs', '5', '--count', '10', '--batch', '["euclidean", {"M": 8, "efConstruction": 128}]', '[128]']
+2024-01-12 17:23:26,878 - annb.32f69ab81cf6 - INFO - [34m['euclidean', {'M': 8, 'efConstruction': 128}][0m
+2024-01-12 17:23:26,878 - annb.32f69ab81cf6 - INFO - [34mTrying to instantiate ann_benchmarks.algorithms.pgvector.PGVector(['euclidean', {'M': 8, 'efConstruction': 128}])[0m
+2024-01-12 17:23:27,823 - annb.32f69ab81cf6 - INFO - [34mGot a train set of size (1000000 * 128)[0m
+2024-01-12 17:23:27,823 - annb.32f69ab81cf6 - INFO - [34mGot 10000 queries[0m
+2024-01-12 17:23:28,369 - annb.32f69ab81cf6 - INFO - [34m * Starting PostgreSQL 15 database server[0m
+2024-01-12 17:23:36,215 - annb.32f69ab81cf6 - INFO - [34m   ...done.[0m
+2024-01-12 17:23:36,241 - annb.32f69ab81cf6 - INFO - [34mcopying data...[0m
+2024-01-12 17:24:20,889 - annb.32f69ab81cf6 - INFO - [34mcreating index...[0m
+2024-01-12 17:42:58,071 - annb.32f69ab81cf6 - INFO - [34mdone![0m
+2024-01-12 17:42:58,073 - annb.32f69ab81cf6 - INFO - [34mBuilt index in 1169.7601854801178[0m
+2024-01-12 17:42:58,073 - annb.32f69ab81cf6 - INFO - [34mIndex size:  716728.0[0m
+2024-01-12 17:42:58,073 - annb.32f69ab81cf6 - INFO - [34mRunning query argument group 1 of 1...[0m
+2024-01-12 17:42:58,073 - annb.32f69ab81cf6 - INFO - [34mRun 1/5...[0m
+2024-01-12 17:43:27,845 - annb.32f69ab81cf6 - INFO - [34mRun 2/5...[0m
+2024-01-12 17:43:57,578 - annb.32f69ab81cf6 - INFO - [34mRun 3/5...[0m
+2024-01-12 17:44:27,336 - annb.32f69ab81cf6 - INFO - [34mRun 4/5...[0m
+2024-01-12 17:44:57,231 - annb.32f69ab81cf6 - INFO - [34mRun 5/5...[0m
+2024-01-12 17:45:30,278 - annb.32f69ab81cf6 - INFO - Child process for container 32f69ab81cf6 returned exit code 0 with message 
+2024-01-12 17:45:30,278 - annb.32f69ab81cf6 - INFO - Removing container
+2024-01-12 17:45:30,667 - annb - INFO - Terminating 1 workers
